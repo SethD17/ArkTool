@@ -1,5 +1,5 @@
 html{
-font-family: Impact, Charcoal, sans-serif;
+font-family: "Arial Black", Gadget, sans-serif;
 background-image: linear-gradient(#70e1f5, #ffd194);
 height: 100%;
 }
@@ -22,7 +22,7 @@ body{
 }
 .navBar li a:hover{
   color: white;
-  background-color: rgba(104, 117, 125, 1); 
+  background-color: rgba(104, 117, 125, 1);
 }
 .navItems a {
   text-decoration: none;
