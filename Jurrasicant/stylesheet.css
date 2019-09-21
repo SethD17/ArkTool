@@ -34,10 +34,18 @@ body{
   background-color: rgba(104, 117, 125, 0.5);
   border-radius: 25px;
 }
+.table{
+  display: grid;
+  justify-content: center;
+  margin-top: 45px;
+}
 .navBar li.icon img{
   width: 120px;
   height: 80px;
 }
 #icon{
   background-color: inherit;
+}
+.table table tr{
+  margin-right: 40px;
 }
