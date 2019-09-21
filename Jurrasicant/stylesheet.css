@@ -1,0 +1,43 @@
+html{
+font-family: Impact, Charcoal, sans-serif;
+background-image: linear-gradient(#70e1f5, #ffd194);
+height: 100%;
+}
+body{
+
+}
+.navBar{
+  display: grid;
+  justify-content: center;
+}
+.navBar ul{
+  list-style: none;
+  min-width: 100%;
+}
+.navBar li{
+  display: inline-block;
+}
+.navBar li a.active{
+  color: #ff9472;
+}
+.navBar li a:hover{
+  color: white;
+  background-color: rgba(104, 117, 125, 1); 
+}
+.navItems a {
+  text-decoration: none;
+  color: #ffd194;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgba(104, 117, 125, 0.5);
+  border-radius: 25px;
+}
+.navBar li.icon img{
+  width: 120px;
+  height: 80px;
+}
+#icon{
+  background-color: inherit;
+}
