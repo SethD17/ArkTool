@@ -28,10 +28,26 @@
       <th>Health</th>
       <th>Stamina</th>
       <th>Oxygen</th>
+      <th>Food</th>
       <th>Weight</th>
+      <th>Melee Damage</th>
       <th>Movement Speed</th>
       <th>Torpor</th>
     </tr>
+    <?php
+    $conn = mysqli_connect("localhost", "root", "", "Jurrasicant");
+    if ($conn-> connect_error) {
+      die("Connection failed:". $conn-> connect_error);
+    }
+
+    $sql = "SELECT Name, Health, Stamina, Weight, Melee_Damage, Movement_Speed FROM Raptors";
+    $result = $conn -> query($sql);
+    if ($result -> num_rows > 0) {
+      while ($row = $result -> fetch_assoc()){
+        echo "<tr><td>". $row["Name"]."</td><td>". $row["Health"]."</td><td>". $row["Stamina"]."</td><td>". $row["Weight"]."</td><td>". $row["Melee_Damage"]."</td><td>". $row["Movement_Speed"]."</td></tr>";
+      }
+    }
+    ?>
   </table>
 </div>
 </html>
